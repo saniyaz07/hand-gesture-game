@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saniya GTA Portfolio</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #0d0d0d;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .bio {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #111, #222);
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    .slide {
+      flex: none;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a1a;
+      border-right: 2px solid #333;
+    }
+    .stat-wheel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+    .stat {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid gold;
+    }
+    .heist {
+      padding: 40px;
+      background: #111;
+      border-left: 4px solid crimson;
+      margin: 20px;
+    }
+    .loadout {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+    }
+    .tier {
+      flex: 1;
+      margin: 10px;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #555;
+    }
+    .loading-screen {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+      color: gold;
+      font-size: 2em;
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Executive Bio -->
+  <div class="bio">
+    📍 Eclipse Towers | Premium AI Ops | Turning data into high‑stakes wins — luxury solutions for the digital underworld.
+  </div>
+
+  <!-- 2. Heist Leader Profile -->
+  <div class="carousel">
+    <div class="slide">
+      <h1>Character Select: Saniya Zareen Ansari</h1>
+      <p>Role: Data Science Operative | Base: Vinewood Hills</p>
+      <p>“Every mission is high‑stakes. Every solution — luxury grade.”</p>
+    </div>
+    <div class="slide">
+      <div class="stat-wheel">
+        <div class="stat">Machine Learning: 95/100 — Precision‑engineered models, tuned like supercars.</div>
+        <div class="stat">Computer Vision: 92/100 — Clinical‑grade fracture detection.</div>
+        <div class="stat">Full‑Stack Deployment: 90/100 — End‑to‑end systems, zero downtime.</div>
+        <div class="stat">Predictive Modelling: 88/100 — Forecasting outcomes like casino odds.</div>
+        <div class="stat">Leadership: 85/100 — Coordinated 300+ recruits, events ranked #1.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. The Heists -->
+  <div class="heist">
+    <h2>Operation RoadX: License Lockdown</h2>
+    <p><strong>Setup:</strong> RoadX faced chaos in verifying thousands of licenses.</p>
+    <ul>
+      <li>Engineered 3‑stage preprocessing pipeline.</li>
+      <li>Integrated OCR for flawless extraction.</li>
+      <li>Automated violation cross‑checks.</li>
+    </ul>
+    <p><strong>Payout:</strong> 89% accuracy, 100% success rate. Crew Share: Staff freed from manual drudgery.</p>
+  </div>
+
+  <div class="heist">
+    <h2>Operation Digital Partograph: Hospital Takeover</h2>
+    <p><strong>Setup:</strong> Paper‑based maternal monitoring risking patient safety.</p>
+    <ul>
+      <li>Digitized full maternal workflow.</li>
+      <li>Built real‑time labor tracking system.</li>
+      <li>Deployed zero‑downtime production platform.</li>
+    </ul>
+    <p><strong>Payout:</strong> 300 patients monitored, delays eliminated. Crew Share: Lives safeguarded.</p>
+  </div>
+
+  <!-- 4. Custom Loadout -->
+  <div class="loadout">
+    <div class="tier">
+      <h3>Sidearms</h3>
+      <p>Python · SQL · GitHub · Jupyter · VS Code</p>
+    </div>
+    <div class="tier">
+      <h3>Heavy Artillery</h3>
+      <p>CNNs · Computer Vision · Oracle Cloud · Supabase · Vercel · Render</p>
+    </div>
+    <div class="tier">
+      <h3>Tactical Gear</h3>
+      <p>Power BI · Tableau · Predictive Modelling · Event Coordination</p>
+    </div>
+  </div>
+
+  <!-- 5. Loading Screen -->
+  <div class="loading-screen">
+    Saniya Zareen Ansari — Data Science Operative
+  </div>
+
+</body>
+</html>
